@@ -1,0 +1,21 @@
+def fibonacci(n):
+    if n <= 0:
+        return "Invalid input"
+    elif n == 1:
+        return 0
+    elif n == 2:
+        return 1
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
+
+def print_fibonacci_series(count):
+    if count <= 0:
+        print("Invalid input")
+    else:
+        print("Fibonacci Series:")
+        for i in range(1, count + 1):
+            print(fibonacci(i), end=" ")
+
+# Example usage:
+count = 10  # Change this to the desired count of Fibonacci numbers
+print_fibonacci_series(count)
